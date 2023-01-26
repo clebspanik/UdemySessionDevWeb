@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Curso Completo de Desenvolvedor Web</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+	</head>
+	<body>
+		<form method="GET" action="">
+			<div class="form-group">
+				<label for="nome">Nome</label>
+				<input type="text" name="nome" id="nome" class="form-control" placeholder="Digite o seu nome" required>
+			</div>
+			<div class="form-group">
+				<label for="email">E-mail</label>
+				<input type="text" name="email" id="email" class="form-control" placeholder="seu@email.com.br" required>
+			</div>
+			<div class="form-group">
+				<label for="email">Nascimento</label>
+				<input type="date" name="nascimento" id="email" class="form-control" required min="2014-01-01" max="2016-01-15">
+			</div>
+			<div class="form-group">
+				<label>Sexo</label>
+				<input type="radio" name="sexo" id="mascunlino" class="form-control">
+				<label for="masculino">Masculino</label>
+				<input type="radio" name="sexo" id="feminino" class="form-control">
+				<label for="feminino">Feminino</label>
+			</div>
+			<div class="form-group">
+				<label for="Li">Li o contrato</label>
+				<input type="checkbox" name="li" id="li" class="form-control" required checked>
+			</div>
+			<div class="form-group">
+				<label for="Li">Volume</label>
+				<input type="range" name="volume" id="volume" min="0" max="100" value="25">
+			</div>
+			<div class="form-group">
+				<label for="meter">Bateria</label>
+				<meter min="0" max="100" low="15" value="10"></meter>
+			</div>
+
+			<div class="form-group">
+				<label for="estados" id="estados">Estados</label>
+				<select name="estados" id="estados" multiple size="3">
+					<optgroup label="Sul">
+						<option value="PR">PARANÁ</option>
+						<option value="SC">SANTA CATARINA</option>
+						<option value="RS">RIO GRANDE DO SUL</option>
+					</optgroup>
+				</select> 
+			</div>
+
+			<div class="form-group">
+				<input type="text" list="navegadores">
+				<datalist id= "navegadores">
+					<option value="chrome">
+					<option value="firefox">
+					<option value="explorer">
+					<option value="Edge">
+				</datalist>
+				
+			</div>
+
+			<input type="hidden" name="id" value="1">
+			<div>
+				<button type="submit" class="btn btn-primary">Cadastrar</button>
+			</div>
+
+		</form>
+		
+
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
